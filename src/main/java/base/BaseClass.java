@@ -13,16 +13,17 @@ import pages.HomePage;
 public class BaseClass {
 	public WebDriver driver;
 	public HomePage homePage;
-	//Test out github
-	
+
+	// Test out github
 
 	@BeforeMethod
-	
+
 	public void setUp() {
-		//System.setProperty("webdriver.chrome.driver",
-		//	"/Users/macbook/eclipse-workspace/com.walmart/driver/chromedriver");
-		//System.setProperty("WebDriver.chrome.driver",System.getProperty("user.driver" )+"/driver./chromedriver.exe" );
-	System.setProperty("WebDriver.chrome.driver","/.driver.chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+		"/Users/macbook/eclipse-workspace/com.walmart/driver/chromedriver");
+		// System.setProperty("WebDriver.chrome.driver",System.getProperty("user.driver"
+		//)+"/driver./chromedriver.exe" );
+		//System.setProperty("WebDriver.chrome.driver", "/.driver.chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -39,4 +40,3 @@ public class BaseClass {
 	}
 
 }
-

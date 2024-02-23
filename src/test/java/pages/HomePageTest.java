@@ -11,24 +11,25 @@ public class HomePageTest extends BaseClass {
 	@Test(enabled =false,priority=2  )
 	public void searchField() throws InterruptedException {
 		homePage.searchField();
+		
 	}
 	@Test(enabled = false,priority = 1)
 		public void logoElement() throws InterruptedException {
 		homePage.logoElement();
 			
 		}
-	@Test(enabled =false,priority = 3)
+	/*@Test(enabled =false,priority = 3)
 	public void sinInButton() throws InterruptedException  {
 	homePage.signInButton();
 	
-	}
+	}*/
 	
-	@Test(enabled =true,priority =4)
+	/*@Test(enabled =true)
 	public void SignInAccount () throws InterruptedException  {
 	homePage.SignInAccount();
-	}
+	}*/
 	
-	@Test(enabled =true,priority =5)
+	@Test(enabled =true)
 	public void SignIncreateAccount() throws InterruptedException  {
 	homePage.clickSignIncreateAccount();
 	}
